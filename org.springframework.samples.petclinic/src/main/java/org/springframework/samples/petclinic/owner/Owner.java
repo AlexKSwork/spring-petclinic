@@ -1,6 +1,5 @@
 package org.springframework.samples.REMOVED.owner;
 
-
 public class Owner {
 
 	private Long id;
