@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.owner;
+package org.springframework.samples.REMOVED.owners;
 
 public class Owner {
 

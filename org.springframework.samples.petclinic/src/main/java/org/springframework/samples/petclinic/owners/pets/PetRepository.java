@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.pet;
+package org.springframework.samples.REMOVED.owners.pets;
 
 public interface PetRepository {
 	

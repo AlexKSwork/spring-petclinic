@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.owner;
+package org.springframework.samples.REMOVED.owners;
 
 import java.util.Collection;
 

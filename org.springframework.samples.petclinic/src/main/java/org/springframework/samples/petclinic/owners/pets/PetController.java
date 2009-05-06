@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.pet;
+package org.springframework.samples.REMOVED.owners.pets;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.util.ResponseContext;

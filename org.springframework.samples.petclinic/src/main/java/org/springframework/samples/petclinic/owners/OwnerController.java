@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.owner;
+package org.springframework.samples.REMOVED.owners;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.util.ResponseContext;
