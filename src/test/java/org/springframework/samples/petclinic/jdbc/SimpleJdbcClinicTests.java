@@ -1,6 +1,7 @@
 package org.springframework.samples.REMOVED.jdbc;
 
 import org.springframework.samples.REMOVED.AbstractClinicTests;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
  * @author Thomas Risberg
  */
 @ContextConfiguration
+@DirtiesContext
 public class SimpleJdbcClinicTests extends AbstractClinicTests {
 
 }

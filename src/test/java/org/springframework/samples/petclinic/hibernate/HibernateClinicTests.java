@@ -1,6 +1,7 @@
 package org.springframework.samples.REMOVED.hibernate;
 
 import org.springframework.samples.REMOVED.AbstractClinicTests;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
  * @author Sam Brannen
  */
 @ContextConfiguration
+@DirtiesContext
 public class HibernateClinicTests extends AbstractClinicTests {
 
 }
