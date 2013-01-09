@@ -30,13 +30,13 @@ import org.springframework.web.bind.support.SessionStatus;
 @Controller
 @RequestMapping("/owners/*/pets/{petId}/edit")
 @SessionAttributes("pet")
-public class EditPetForm {
+public class EditPetController {
 
 	private final Clinic clinic;
 
 
 	@Autowired
-	public EditPetForm(Clinic clinic) {
+	public EditPetController(Clinic clinic) {
 		this.clinic = clinic;
 	}
 

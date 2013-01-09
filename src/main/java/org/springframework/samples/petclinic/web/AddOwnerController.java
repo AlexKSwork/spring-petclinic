@@ -27,13 +27,13 @@ import org.springframework.web.bind.support.SessionStatus;
 @Controller
 @RequestMapping("/owners/new")
 @SessionAttributes(types = Owner.class)
-public class AddOwnerForm {
+public class AddOwnerController {
 
 	private final Clinic clinic;
 
 
 	@Autowired
-	public AddOwnerForm(Clinic clinic) {
+	public AddOwnerController(Clinic clinic) {
 		this.clinic = clinic;
 	}
 

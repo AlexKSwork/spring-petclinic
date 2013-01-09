@@ -3,8 +3,9 @@ package org.springframework.samples.REMOVED.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.Clinic;
-import org.springframework.samples.REMOVED.Owner;
-import org.springframework.samples.REMOVED.validation.OwnerValidator;
+import org.springframework.samples.REMOVED.Pet;
+import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.validation.VisitValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,22 +19,23 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 /**
- * JavaBean Form controller that is used to edit an existing <code>Owner</code>.
+ * JavaBean form controller that is used to add a new <code>Visit</code> to the
+ * system.
  * 
  * @author Juergen Hoeller
  * @author Ken Krebs
  * @author Arjen Poutsma
  */
 @Controller
-@RequestMapping("/owners/{ownerId}/edit")
-@SessionAttributes(types = Owner.class)
-public class EditOwnerForm {
+@RequestMapping("/owners/*/pets/{petId}/visits/new")
+@SessionAttributes("visit")
+public class AddVisitController {
 
 	private final Clinic clinic;
 
 
 	@Autowired
-	public EditOwnerForm(Clinic clinic) {
+	public AddVisitController(Clinic clinic) {
 		this.clinic = clinic;
 	}
 
@@ -43,22 +45,24 @@ public class EditOwnerForm {
 	}
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String setupForm(@PathVariable("ownerId") int ownerId, Model model) {
-		Owner owner = this.clinic.loadOwner(ownerId);
-		model.addAttribute(owner);
-		return "owners/form";
+	public String setupForm(@PathVariable("petId") int petId, Model model) {
+		Pet pet = this.clinic.loadPet(petId);
+		Visit visit = new Visit();
+		pet.addVisit(visit);
+		model.addAttribute("visit", visit);
+		return "pets/visitForm";
 	}
 
-	@RequestMapping(method = RequestMethod.PUT)
-	public String processSubmit(@ModelAttribute Owner owner, BindingResult result, SessionStatus status) {
-		new OwnerValidator().validate(owner, result);
+	@RequestMapping(method = RequestMethod.POST)
+	public String processSubmit(@ModelAttribute("visit") Visit visit, BindingResult result, SessionStatus status) {
+		new VisitValidator().validate(visit, result);
 		if (result.hasErrors()) {
-			return "owners/form";
+			return "pets/visitForm";
 		}
 		else {
-			this.clinic.storeOwner(owner);
+			this.clinic.storeVisit(visit);
 			status.setComplete();
-			return "redirect:/owners/" + owner.getId();
+			return "redirect:/owners/" + visit.getPet().getOwner().getId();
 		}
 	}
 

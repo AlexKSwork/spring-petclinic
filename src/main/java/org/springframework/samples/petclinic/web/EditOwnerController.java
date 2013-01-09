@@ -1,14 +1,10 @@
 
 package org.springframework.samples.REMOVED.web;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.Clinic;
 import org.springframework.samples.REMOVED.Owner;
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.PetType;
-import org.springframework.samples.REMOVED.validation.PetValidator;
+import org.springframework.samples.REMOVED.validation.OwnerValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,29 +18,23 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 /**
- * JavaBean form controller that is used to add a new <code>Pet</code> to the
- * system.
+ * JavaBean Form controller that is used to edit an existing <code>Owner</code>.
  * 
  * @author Juergen Hoeller
  * @author Ken Krebs
  * @author Arjen Poutsma
  */
 @Controller
-@RequestMapping("/owners/{ownerId}/pets/new")
-@SessionAttributes("pet")
-public class AddPetForm {
+@RequestMapping("/owners/{ownerId}/edit")
+@SessionAttributes(types = Owner.class)
+public class EditOwnerController {
 
 	private final Clinic clinic;
 
 
 	@Autowired
-	public AddPetForm(Clinic clinic) {
+	public EditOwnerController(Clinic clinic) {
 		this.clinic = clinic;
-	}
-
-	@ModelAttribute("types")
-	public Collection<PetType> populatePetTypes() {
-		return this.clinic.getPetTypes();
 	}
 
 	@InitBinder
@@ -55,22 +45,20 @@ public class AddPetForm {
 	@RequestMapping(method = RequestMethod.GET)
 	public String setupForm(@PathVariable("ownerId") int ownerId, Model model) {
 		Owner owner = this.clinic.loadOwner(ownerId);
-		Pet pet = new Pet();
-		owner.addPet(pet);
-		model.addAttribute("pet", pet);
-		return "pets/form";
+		model.addAttribute(owner);
+		return "owners/form";
 	}
 
-	@RequestMapping(method = RequestMethod.POST)
-	public String processSubmit(@ModelAttribute("pet") Pet pet, BindingResult result, SessionStatus status) {
-		new PetValidator().validate(pet, result);
+	@RequestMapping(method = RequestMethod.PUT)
+	public String processSubmit(@ModelAttribute Owner owner, BindingResult result, SessionStatus status) {
+		new OwnerValidator().validate(owner, result);
 		if (result.hasErrors()) {
-			return "pets/form";
+			return "owners/form";
 		}
 		else {
-			this.clinic.storePet(pet);
+			this.clinic.storeOwner(owner);
 			status.setComplete();
-			return "redirect:/owners/" + pet.getOwner().getId();
+			return "redirect:/owners/" + owner.getId();
 		}
 	}
 
