@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.jpa;
+package org.springframework.samples.REMOVED.aspects;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.aspects.UsageLogAspect;
+import org.springframework.samples.REMOVED.jpa.JpaClinicTests;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static junit.framework.Assert.assertTrue;
@@ -24,10 +25,9 @@ import static junit.framework.Assert.assertFalse;
  * @author Rod Johnson
  * @author Juergen Hoeller
  */
-@ContextConfiguration(locations={"applicationContext-jpaCommon.xml", "applicationContext-hibernateAdapter.xml",
-			"applicationContext-entityManager.xml"})
+@ContextConfiguration(locations={"classpath:spring/applicationContext-jpa.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-public class EntityManagerClinicTests extends AbstractJpaClinicTests {
+public class UsageLogAspectTests extends JpaClinicTests {
 
 	@Autowired
 	private UsageLogAspect usageLogAspect;

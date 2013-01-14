@@ -1,5 +1,8 @@
 package org.springframework.samples.REMOVED;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
 /**
  * Simple JavaBean domain object adds a name property to <code>BaseEntity</code>.
  * Used as a base class for objects needing these properties.
@@ -7,8 +10,10 @@ package org.springframework.samples.REMOVED;
  * @author Ken Krebs
  * @author Juergen Hoeller
  */
+@MappedSuperclass
 public class NamedEntity extends BaseEntity {
 
+	@Column(name="name")
 	private String name;
 	
 
