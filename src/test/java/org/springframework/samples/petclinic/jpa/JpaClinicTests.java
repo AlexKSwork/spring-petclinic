@@ -1,12 +1,7 @@
 
 package org.springframework.samples.REMOVED.jpa;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
 import static junit.framework.Assert.fail;
-
-import java.util.Collection;
-import java.util.Date;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,15 +11,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.AbstractClinicTests;
 import org.springframework.samples.REMOVED.Clinic;
-import org.springframework.samples.REMOVED.Owner;
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.PetType;
-import org.springframework.samples.REMOVED.Vet;
-import org.springframework.samples.REMOVED.Visit;
-import org.springframework.samples.REMOVED.util.EntityUtils;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -45,8 +34,9 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Michael Isvy
  */
 
-@ContextConfiguration(locations={"classpath:spring/applicationContext-jpa.xml"})
+@ContextConfiguration(locations={"classpath:spring/applicationContext-dao.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
+@ActiveProfiles("jpa")
 public class JpaClinicTests extends AbstractClinicTests {
 	
 	@PersistenceContext
