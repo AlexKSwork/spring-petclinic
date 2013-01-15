@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.REMOVED.Clinic;
 import org.springframework.samples.REMOVED.aspects.UsageLogAspect;
-import org.springframework.samples.REMOVED.jpa.JpaClinicTests;
+import org.springframework.samples.REMOVED.jpa.JpaClinicImplTests;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -29,7 +29,7 @@ import static junit.framework.Assert.assertFalse;
  */
 @ContextConfiguration(locations={"classpath:spring/applicationContext-dao.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("jpa")
+@ActiveProfiles({"jpa","plain-jpa"})
 public class UsageLogAspectTests {
 
 	@Autowired
