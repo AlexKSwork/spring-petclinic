@@ -5,5 +5,5 @@
  * of PetClinic's persistence layer.
  *
  */
-package org.springframework.samples.REMOVED.jpa;
+package org.springframework.samples.REMOVED.repository.jpa;
 

@@ -1,7 +1,8 @@
-package org.springframework.samples.REMOVED.jdbc;
+package org.springframework.samples.REMOVED.jpa;
 
 import org.junit.runner.RunWith;
-import org.springframework.samples.REMOVED.AbstractClinicTests;
+import org.springframework.samples.REMOVED.AbstractPetRepositoryTests;
+import org.springframework.samples.REMOVED.repository.jdbc.JdbcClinicImpl;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,8 +21,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations={"classpath:spring/applicationContext-dao.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 @DirtiesContext
-@ActiveProfiles("jdbc")
-public class JdbcClinicImplTests extends AbstractClinicTests {
+@ActiveProfiles({"jpa","plain-jpa"})
+public class JpaPetRepositoryImplTests extends AbstractPetRepositoryTests {
 	
 	
 

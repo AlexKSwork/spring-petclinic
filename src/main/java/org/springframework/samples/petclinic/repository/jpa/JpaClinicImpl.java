@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.jpa;
+package org.springframework.samples.REMOVED.repository.jpa;
 
 import java.util.Collection;
 
@@ -6,18 +6,18 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import org.springframework.samples.REMOVED.Clinic;
 import org.springframework.samples.REMOVED.Owner;
 import org.springframework.samples.REMOVED.Pet;
 import org.springframework.samples.REMOVED.PetType;
 import org.springframework.samples.REMOVED.Vet;
 import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.dao.DataAccessException;
 
 /**
- * JPA implementation of the Clinic interface using EntityManager.
+ * JPA implementation of the ClinicService interface using EntityManager.
  *
  * <p>The mappings are defined in "orm.xml" located in the META-INF directory.
  *
@@ -29,7 +29,7 @@ import org.springframework.dao.DataAccessException;
  */
 @Repository
 @Transactional
-public class JpaClinicImpl implements Clinic {
+public class JpaClinicImpl implements ClinicService {
 
 	@PersistenceContext
 	private EntityManager em;

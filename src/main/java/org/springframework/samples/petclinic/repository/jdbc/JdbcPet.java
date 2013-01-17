@@ -1,10 +1,10 @@
-package org.springframework.samples.REMOVED.jdbc;
+package org.springframework.samples.REMOVED.repository.jdbc;
 
 import org.springframework.samples.REMOVED.Pet;
 
 /**
  * Subclass of Pet that carries temporary id properties which
- * are only relevant for a JDBC implmentation of the Clinic.
+ * are only relevant for a JDBC implmentation of the ClinicService.
  *
  * @author Juergen Hoeller
  * @see JdbcClinicImpl

@@ -1,22 +1,22 @@
-package org.springframework.samples.REMOVED.jpa;
+package org.springframework.samples.REMOVED.repository.jpa;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
-import org.springframework.samples.REMOVED.Clinic;
 import org.springframework.samples.REMOVED.Owner;
 import org.springframework.samples.REMOVED.Pet;
 import org.springframework.samples.REMOVED.PetType;
 import org.springframework.samples.REMOVED.Vet;
 import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.service.ClinicService;
 
 /**
  *
  * @author Michael Isvy
  * @since 15.1.2013
  */
-public interface SpringDataClinic extends Clinic, Repository {
+public interface SpringDataClinic extends ClinicService, Repository {
 
 
 
