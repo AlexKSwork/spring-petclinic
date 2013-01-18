@@ -120,7 +120,7 @@
 	</beans>
 	
 	<beans profile="spring-data-jpa">
-		<jpa:repositories base-package="org.springframework.samples.REMOVED.repository.jpa"/>
+		<jpa:repositories base-package="org.springframework.samples.REMOVED.repository.springdatajpa"/>
 	
 	</beans>
 </beans>

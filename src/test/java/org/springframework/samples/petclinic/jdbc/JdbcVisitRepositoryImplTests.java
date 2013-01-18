@@ -2,7 +2,6 @@ package org.springframework.samples.REMOVED.jdbc;
 
 import org.junit.runner.RunWith;
 import org.springframework.samples.REMOVED.AbstractVisitRepositoryTests;
-import org.springframework.samples.REMOVED.repository.jdbc.JdbcClinicImpl;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;

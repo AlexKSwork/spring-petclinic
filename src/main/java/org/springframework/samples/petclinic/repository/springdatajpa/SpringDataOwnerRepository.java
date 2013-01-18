@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.repository.jpa;
+package org.springframework.samples.REMOVED.repository.springdatajpa;
 
 import org.springframework.data.repository.Repository;
 import org.springframework.samples.REMOVED.Owner;

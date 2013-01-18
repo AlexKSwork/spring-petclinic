@@ -1,5 +1,5 @@
 
-package org.springframework.samples.REMOVED.jpa;
+package org.springframework.samples.REMOVED.springdatajpa;
 
 import org.junit.runner.RunWith;
 import org.springframework.samples.REMOVED.AbstractOwnerRepositoryTests;

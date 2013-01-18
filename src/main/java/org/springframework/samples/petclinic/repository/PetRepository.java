@@ -1,14 +1,11 @@
 package org.springframework.samples.REMOVED.repository;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.samples.REMOVED.BaseEntity;
-import org.springframework.samples.REMOVED.Owner;
 import org.springframework.samples.REMOVED.Pet;
 import org.springframework.samples.REMOVED.PetType;
-import org.springframework.samples.REMOVED.Vet;
-import org.springframework.samples.REMOVED.Visit;
 
 /**
  * The high-level PetClinic business interface.
@@ -26,7 +23,7 @@ public interface PetRepository {
 	 * Retrieve all <code>PetType</code>s from the data store.
 	 * @return a <code>Collection</code> of <code>PetType</code>s
 	 */
-	Collection<PetType> getPetTypes() throws DataAccessException;
+	List<PetType> findPetTypes() throws DataAccessException;
 
 	/**
 	 * Retrieve a <code>Pet</code> from the data store by id.
@@ -41,11 +38,6 @@ public interface PetRepository {
 	 * @param pet the <code>Pet</code> to save
 	 * @see BaseEntity#isNew
 	 */
-	void storePet(Pet pet) throws DataAccessException;
-
-	/**
-	 * Deletes a <code>Pet</code> from the data store.
-	 */
-	void deletePet(int id) throws DataAccessException;
+	void save(Pet pet) throws DataAccessException;
 
 }
