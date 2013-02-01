@@ -71,11 +71,7 @@
 						p:database="${jpa.database}" p:showSql="${jpa.showSql}"/>			
 			</property>
 			<property name="persistenceUnitName" value="REMOVED" />
-			<property name="packagesToScan">
-				<list>
-					<value>org/springframework/samples/REMOVED</value>
-				</list>
-			</property>
+			<property name="packagesToScan" value="org/springframework/samples/REMOVED" />
 		</bean>
 	
 		<!-- Transaction manager for a single JPA EntityManagerFactory (alternative to JTA) -->
