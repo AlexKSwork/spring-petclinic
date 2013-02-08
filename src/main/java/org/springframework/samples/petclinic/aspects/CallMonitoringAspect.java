@@ -2,8 +2,10 @@ package org.springframework.samples.REMOVED.aspects;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.jmx.export.annotation.ManagedAttribute;
 import org.springframework.jmx.export.annotation.ManagedOperation;
+import org.springframework.jmx.export.annotation.ManagedResource;
 import org.springframework.util.StopWatch;
 
 /**
@@ -12,10 +14,11 @@ import org.springframework.util.StopWatch;
  *
  * @author Rob Harrop
  * @author Juergen Hoeller
+ * @author Michael Isvy
  * @since 2.5
  */
-//@ManagedResource("REMOVED:type=CallMonitor")
-//@Aspect
+@ManagedResource("REMOVED:type=CallMonitor")
+@Aspect
 public class CallMonitoringAspect {
 
 	private boolean isEnabled = true;

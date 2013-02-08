@@ -18,7 +18,7 @@ import org.springframework.samples.REMOVED.Specialty;
 import org.springframework.samples.REMOVED.Vet;
 import org.springframework.samples.REMOVED.repository.VetRepository;
 import org.springframework.samples.REMOVED.util.EntityUtils;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -30,7 +30,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Thomas Risberg
  * @author Mark Fisher
  */
-@Service
+@Repository
 public class JdbcVetRepositoryImpl implements VetRepository {
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
