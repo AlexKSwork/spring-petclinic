@@ -17,7 +17,7 @@
 	-->
 	<context:component-scan base-package="org.springframework.samples.REMOVED.web, org.springframework.samples.REMOVED.service"/>
 	
-	 <mvc:annotation-driven  conversion-service="conversionService"/>
+	<mvc:annotation-driven conversion-service="conversionService" />
 	
 	<!--  all resources inside folder src/main/webapp/resources are mapped so they can be refered to inside JSP files
 		(see header.jsp for more details) -->
