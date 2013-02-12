@@ -18,7 +18,7 @@
 	</aop:aspectj-autoproxy>
 
 	<!-- Call monitoring aspect that monitors call count and call invocation time -->
-	<bean id="callMonitor" class="org.springframework.samples.REMOVED.aspects.CallMonitoringAspect"/>	
+	<bean id="callMonitor" class="org.springframework.samples.REMOVED.util.CallMonitoringAspect"/>	
 
 	<!--
 		Exporter that exposes the CallMonitoringAspect via JMX,

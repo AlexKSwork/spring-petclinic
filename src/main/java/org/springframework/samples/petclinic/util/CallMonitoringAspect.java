@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED.aspects;
+package org.springframework.samples.REMOVED.util;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
