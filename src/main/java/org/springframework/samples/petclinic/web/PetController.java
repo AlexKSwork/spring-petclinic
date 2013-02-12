@@ -22,7 +22,6 @@ import org.springframework.samples.REMOVED.Owner;
 import org.springframework.samples.REMOVED.Pet;
 import org.springframework.samples.REMOVED.PetType;
 import org.springframework.samples.REMOVED.service.ClinicService;
-import org.springframework.samples.REMOVED.validation.PetValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
