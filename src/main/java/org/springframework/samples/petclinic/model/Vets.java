@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.samples.REMOVED;
+package org.springframework.samples.REMOVED.model;
 
 import java.util.ArrayList;
 import java.util.List;

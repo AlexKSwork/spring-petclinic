@@ -3,7 +3,7 @@ package org.springframework.samples.REMOVED.repository;
 import java.util.Collection;
 
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.REMOVED.Vet;
+import org.springframework.samples.REMOVED.model.Vet;
 
 /**
  * The high-level PetClinic business interface.

@@ -18,8 +18,8 @@ package org.springframework.samples.REMOVED.web;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

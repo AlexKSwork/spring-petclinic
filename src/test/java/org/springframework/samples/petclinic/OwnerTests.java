@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.model.Pet;
 
 /**
  * JUnit test for the {@link Owner} class.

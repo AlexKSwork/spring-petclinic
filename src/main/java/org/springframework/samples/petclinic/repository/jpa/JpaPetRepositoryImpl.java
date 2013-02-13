@@ -5,8 +5,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.PetType;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.repository.PetRepository;
 import org.springframework.stereotype.Repository;
 

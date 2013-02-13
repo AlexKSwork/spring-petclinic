@@ -4,13 +4,13 @@
 <aspectj>
 
 	<weaver>
-		<include within="org.springframework.samples.REMOVED..*"/>
+		<include within="org.springframework.samples.REMOVED.model..*"/>
 	</weaver>
 
 	<aspects>
-		<aspect name="org.springframework.samples.REMOVED.aspects.UsageLogAspect"/>
-		<concrete-aspect name="org.springframework.samples.REMOVED.aspects.ApplicationTraceAspect"
-				extends="org.springframework.samples.REMOVED.aspects.AbstractTraceAspect">
+		<aspect name="org.springframework.samples.REMOVED.model.aspects.UsageLogAspect"/>
+		<concrete-aspect name="org.springframework.samples.REMOVED.model.aspects.ApplicationTraceAspect"
+				extends="org.springframework.samples.REMOVED.model.aspects.AbstractTraceAspect">
 			<pointcut name="traced" expression="execution(* org.springframework.samples..*.*(..))"/>
 		</concrete-aspect>
 	</aspects>

@@ -18,9 +18,9 @@ package org.springframework.samples.REMOVED.web;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.samples.REMOVED.Owner;
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.PetType;
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

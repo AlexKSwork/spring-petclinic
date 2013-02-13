@@ -14,8 +14,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 import org.springframework.jmx.export.annotation.ManagedOperation;
-import org.springframework.samples.REMOVED.Specialty;
-import org.springframework.samples.REMOVED.Vet;
+import org.springframework.samples.REMOVED.model.Specialty;
+import org.springframework.samples.REMOVED.model.Vet;
 import org.springframework.samples.REMOVED.repository.VetRepository;
 import org.springframework.samples.REMOVED.util.EntityUtils;
 import org.springframework.stereotype.Repository;
@@ -46,7 +46,7 @@ public class JdbcVetRepositoryImpl implements VetRepository {
 
 	/**
 	 * Refresh the cache of Vets that the ClinicService is holding.
-	 * @see org.springframework.samples.REMOVED.service.ClinicService#findVets()
+	 * @see org.springframework.samples.REMOVED.model.service.ClinicService#findVets()
 	 */
 	@ManagedOperation
 	@Transactional(readOnly = true)

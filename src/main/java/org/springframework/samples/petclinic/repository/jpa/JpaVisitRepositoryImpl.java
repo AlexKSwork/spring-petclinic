@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.VisitRepository;
 import org.springframework.stereotype.Repository;
 

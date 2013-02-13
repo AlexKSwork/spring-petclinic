@@ -4,7 +4,7 @@ package org.springframework.samples.REMOVED.util;
 import java.util.Collection;
 
 import org.springframework.orm.ObjectRetrievalFailureException;
-import org.springframework.samples.REMOVED.BaseEntity;
+import org.springframework.samples.REMOVED.model.BaseEntity;
 
 /**
  * Utility methods for handling entities. Separate from the BaseEntity class
@@ -14,7 +14,7 @@ import org.springframework.samples.REMOVED.BaseEntity;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 29.10.2003
- * @see org.springframework.samples.REMOVED.BaseEntity
+ * @see org.springframework.samples.REMOVED.model.BaseEntity
  */
 public abstract class EntityUtils {
 

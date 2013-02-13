@@ -15,7 +15,7 @@
  */
 package org.springframework.samples.REMOVED.web;
 
-import org.springframework.samples.REMOVED.Pet;
+import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.Errors;
 

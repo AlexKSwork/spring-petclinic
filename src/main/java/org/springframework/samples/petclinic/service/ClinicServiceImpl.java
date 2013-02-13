@@ -4,11 +4,11 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.REMOVED.Owner;
-import org.springframework.samples.REMOVED.Pet;
-import org.springframework.samples.REMOVED.PetType;
-import org.springframework.samples.REMOVED.Vet;
-import org.springframework.samples.REMOVED.Visit;
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.PetType;
+import org.springframework.samples.REMOVED.model.Vet;
+import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.OwnerRepository;
 import org.springframework.samples.REMOVED.repository.PetRepository;
 import org.springframework.samples.REMOVED.repository.VetRepository;

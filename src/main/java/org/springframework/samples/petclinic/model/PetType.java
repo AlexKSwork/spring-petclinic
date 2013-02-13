@@ -1,4 +1,4 @@
-package org.springframework.samples.REMOVED;
+package org.springframework.samples.REMOVED.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;

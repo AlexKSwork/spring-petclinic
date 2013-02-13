@@ -16,7 +16,7 @@
 package org.springframework.samples.REMOVED.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.samples.REMOVED.Vets;
+import org.springframework.samples.REMOVED.model.Vets;
 import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

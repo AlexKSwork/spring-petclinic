@@ -20,7 +20,7 @@ import java.util.Collection;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.samples.REMOVED.Owner;
+import org.springframework.samples.REMOVED.model.Owner;
 import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

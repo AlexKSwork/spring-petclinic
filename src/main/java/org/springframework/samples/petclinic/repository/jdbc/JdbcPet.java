@@ -1,6 +1,6 @@
 package org.springframework.samples.REMOVED.repository.jdbc;
 
-import org.springframework.samples.REMOVED.Pet;
+import org.springframework.samples.REMOVED.model.Pet;
 
 /**
  * Subclass of Pet that carries temporary id properties which

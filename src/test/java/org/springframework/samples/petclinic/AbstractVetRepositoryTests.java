@@ -6,6 +6,7 @@ import java.util.Collection;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.samples.REMOVED.model.Vet;
 import org.springframework.samples.REMOVED.repository.VetRepository;
 import org.springframework.samples.REMOVED.service.ClinicService;
 import org.springframework.samples.REMOVED.util.EntityUtils;
