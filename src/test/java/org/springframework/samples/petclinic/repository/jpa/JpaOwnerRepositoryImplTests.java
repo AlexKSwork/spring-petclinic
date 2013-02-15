@@ -1,8 +1,8 @@
 
-package org.springframework.samples.REMOVED.springdatajpa;
+package org.springframework.samples.REMOVED.repository.jpa;
 
 import org.junit.runner.RunWith;
-import org.springframework.samples.REMOVED.AbstractOwnerRepositoryTests;
+import org.springframework.samples.REMOVED.repository.AbstractOwnerRepositoryTests;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -28,7 +28,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @ContextConfiguration(locations={"classpath:spring/dao-config.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("spring-data-jpa")
+@ActiveProfiles("jpa")
 public class JpaOwnerRepositoryImplTests extends AbstractOwnerRepositoryTests {
 	
 }

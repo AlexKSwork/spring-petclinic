@@ -1,7 +1,7 @@
-package org.springframework.samples.REMOVED.jdbc;
+package org.springframework.samples.REMOVED.repository.jpa;
 
 import org.junit.runner.RunWith;
-import org.springframework.samples.REMOVED.AbstractVisitRepositoryTests;
+import org.springframework.samples.REMOVED.repository.AbstractPetRepositoryTests;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -18,8 +18,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @ContextConfiguration(locations={"classpath:spring/dao-config.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("jdbc")
-public class JdbcVisitRepositoryImplTests extends AbstractVisitRepositoryTests {
+@ActiveProfiles("jpa")
+public class JpaPetRepositoryImplTests extends AbstractPetRepositoryTests {
 	
 	
 

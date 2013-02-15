@@ -1,8 +1,8 @@
 
-package org.springframework.samples.REMOVED.springdatajpa;
+package org.springframework.samples.REMOVED.repository.springdatajpa;
 
 import org.junit.runner.RunWith;
-import org.springframework.samples.REMOVED.AbstractOwnerRepositoryTests;
+import org.springframework.samples.REMOVED.repository.AbstractOwnerRepositoryTests;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
