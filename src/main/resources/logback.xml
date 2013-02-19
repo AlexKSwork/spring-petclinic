@@ -14,13 +14,9 @@
         </encoder>
     </appender>
 
-	<logger name="accounts" level="debug" />
-	<logger name="rewards" level="debug" />
-    <logger name="org.springframework.beans" level="trace" />
-    <logger name="org.springframework.web.servlet" level="trace" />
-    <logger name="org.springframework.core.env" level="trace" />
+    <logger name="org.springframework.samples.REMOVED" level="debug"/>
 
-	<root level="warn">
-		<appender-ref ref="console" />
-	</root>
+    <root level="warn">
+        <appender-ref ref="console"/>
+    </root>
 </configuration>
