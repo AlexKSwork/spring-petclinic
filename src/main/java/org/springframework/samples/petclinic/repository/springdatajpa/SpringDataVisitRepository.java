@@ -18,7 +18,7 @@ package org.springframework.samples.REMOVED.repository.springdatajpa;
 import org.springframework.data.repository.Repository;
 import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.VisitRepository;
-	
+
 /**
  * Spring Data JPA specialization of the {@link VisitRepository} interface
  *
