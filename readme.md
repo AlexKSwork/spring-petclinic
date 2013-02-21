@@ -5,9 +5,10 @@ spring-REMOVED has been deployed here on cloudfoundry: http://spring-REMOVED.clo
 
 ## Running REMOVED locally
 ```
-git clone https://github.com/SpringSource/spring-REMOVED.git
-mvn tomcat7:run
+	git clone https://github.com/SpringSource/spring-REMOVED.git
+	mvn tomcat7:run
 ```
+
 You can then access REMOVED here: http://localhost:9966/REMOVED/
 
 ## Working with Petclinic in Eclipse/STS
