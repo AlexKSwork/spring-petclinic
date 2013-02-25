@@ -20,7 +20,7 @@
         - POJOs labeled with the @Controller and @Service annotations are auto-detected.
     -->
     <context:component-scan
-            base-package="org.springframework.samples.REMOVED.web, org.springframework.samples.REMOVED.service"/>
+            base-package="org.springframework.samples.REMOVED.web"/>
 
     <mvc:annotation-driven conversion-service="conversionService"/>
 
