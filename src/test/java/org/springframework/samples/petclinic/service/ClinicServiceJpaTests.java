@@ -1,8 +1,7 @@
 
-package org.springframework.samples.REMOVED.repository.springdatajpa;
+package org.springframework.samples.REMOVED.service;
 
 import org.junit.runner.RunWith;
-import org.springframework.samples.REMOVED.repository.AbstractOwnerRepositoryTests;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -20,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @ContextConfiguration(locations = {"classpath:spring/business-config.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("spring-data-jpa")
-public class JpaOwnerRepositoryImplTests extends AbstractOwnerRepositoryTests {
+@ActiveProfiles("jpa")
+public class ClinicServiceJpaTests extends AbstractClinicServiceTests {
 
 }
