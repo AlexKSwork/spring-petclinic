@@ -15,12 +15,12 @@
  */
 package org.springframework.samples.REMOVED.repository;
 
+import java.util.List;
+
 import org.springframework.dao.DataAccessException;
 import org.springframework.samples.REMOVED.model.BaseEntity;
 import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.samples.REMOVED.model.PetType;
-
-import java.util.List;
 
 /**
  * Repository class for <code>Pet</code> domain objects All method names are compliant with Spring Data naming

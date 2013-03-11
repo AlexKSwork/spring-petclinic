@@ -15,14 +15,14 @@
  */
 package org.springframework.samples.REMOVED.repository.springdatajpa;
 
+import java.util.List;
+
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.repository.PetRepository;
-
-import java.util.List;
 
 /**
  * Spring Data JPA specialization of the {@link PetRepository} interface

@@ -15,10 +15,14 @@
  */
 package org.springframework.samples.REMOVED.service;
 
-import org.springframework.dao.DataAccessException;
-import org.springframework.samples.REMOVED.model.*;
-
 import java.util.Collection;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.PetType;
+import org.springframework.samples.REMOVED.model.Vet;
+import org.springframework.samples.REMOVED.model.Visit;
 
 
 /**

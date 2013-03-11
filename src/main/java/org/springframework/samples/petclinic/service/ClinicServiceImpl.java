@@ -15,17 +15,21 @@
  */
 package org.springframework.samples.REMOVED.service;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.REMOVED.model.*;
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.model.Pet;
+import org.springframework.samples.REMOVED.model.PetType;
+import org.springframework.samples.REMOVED.model.Vet;
+import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.OwnerRepository;
 import org.springframework.samples.REMOVED.repository.PetRepository;
 import org.springframework.samples.REMOVED.repository.VetRepository;
 import org.springframework.samples.REMOVED.repository.VisitRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Collection;
 
 /**
  * Mostly used as a facade for all Petclinic controllers

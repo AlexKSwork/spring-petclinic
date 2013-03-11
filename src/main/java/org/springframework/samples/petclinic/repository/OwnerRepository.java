@@ -30,11 +30,11 @@
  */
 package org.springframework.samples.REMOVED.repository;
 
+import java.util.Collection;
+
 import org.springframework.dao.DataAccessException;
 import org.springframework.samples.REMOVED.model.BaseEntity;
 import org.springframework.samples.REMOVED.model.Owner;
-
-import java.util.Collection;
 
 /**
  * Repository class for <code>Owner</code> domain objects All method names are compliant with Spring Data naming

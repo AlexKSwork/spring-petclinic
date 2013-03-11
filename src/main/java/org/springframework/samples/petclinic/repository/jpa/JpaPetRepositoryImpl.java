@@ -15,14 +15,15 @@
  */
 package org.springframework.samples.REMOVED.repository.jpa;
 
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.repository.PetRepository;
 import org.springframework.stereotype.Repository;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.util.List;
 
 /**
  * JPA implementation of the {@link PetRepository} interface.

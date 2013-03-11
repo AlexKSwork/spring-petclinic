@@ -15,18 +15,20 @@
  */
 package org.springframework.samples.REMOVED.web;
 
-import com.sun.syndication.feed.atom.Content;
-import com.sun.syndication.feed.atom.Entry;
-import com.sun.syndication.feed.atom.Feed;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.samples.REMOVED.model.Vet;
 import org.springframework.samples.REMOVED.model.Vets;
 import org.springframework.web.servlet.view.feed.AbstractAtomFeedView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import com.sun.syndication.feed.atom.Content;
+import com.sun.syndication.feed.atom.Entry;
+import com.sun.syndication.feed.atom.Feed;
 
 /**
  * A view creating a Atom representation from a list of Visit objects.

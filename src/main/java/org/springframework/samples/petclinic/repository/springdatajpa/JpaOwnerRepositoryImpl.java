@@ -15,14 +15,15 @@
  */
 package org.springframework.samples.REMOVED.repository.springdatajpa;
 
-import org.springframework.samples.REMOVED.model.Owner;
-import org.springframework.samples.REMOVED.repository.OwnerRepository;
-import org.springframework.stereotype.Repository;
+import java.util.Collection;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.util.Collection;
+
+import org.springframework.samples.REMOVED.model.Owner;
+import org.springframework.samples.REMOVED.repository.OwnerRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Using native JPA instead of Spring Data JPA here because of this query: "SELECT owner FROM Owner owner left join

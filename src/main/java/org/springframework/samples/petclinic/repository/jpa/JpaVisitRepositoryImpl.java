@@ -15,14 +15,15 @@
  */
 package org.springframework.samples.REMOVED.repository.jpa;
 
-import org.springframework.samples.REMOVED.model.Visit;
-import org.springframework.samples.REMOVED.repository.VisitRepository;
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.util.List;
+
+import org.springframework.samples.REMOVED.model.Visit;
+import org.springframework.samples.REMOVED.repository.VisitRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA implementation of the ClinicService interface using EntityManager.

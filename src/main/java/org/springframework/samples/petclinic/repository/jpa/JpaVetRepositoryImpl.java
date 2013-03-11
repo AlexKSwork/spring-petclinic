@@ -15,14 +15,15 @@
  */
 package org.springframework.samples.REMOVED.repository.jpa;
 
+import java.util.Collection;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.samples.REMOVED.model.Vet;
 import org.springframework.samples.REMOVED.repository.VetRepository;
 import org.springframework.stereotype.Repository;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.util.Collection;
 
 /**
  * JPA implementation of the {@link VetRepository} interface.
