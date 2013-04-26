@@ -90,6 +90,11 @@ File -> Import -> Maven -> Existing Maven project
     <td>
       <a href="http://www.thymeleaf.org/REMOVED.html">See here</a></td>
   </tr>
+  <tr>
+    <td>Branch using GemFire and Spring Data GemFire instead of ehcache (thanks Bijoy Choudhury)</td>
+    <td>
+      <a href="https://github.com/bijoych/spring-REMOVED-gemfire">See here</a></td>
+  </tr>
 </table>
 
 <table>
