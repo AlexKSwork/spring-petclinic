@@ -14,6 +14,9 @@ spring-REMOVED has been deployed here on cloudfoundry: http://spring-REMOVED.clo
 
 You can then access REMOVED here: http://localhost:9966/REMOVED/
 
+## In case you find a bug/suggested improvement for Spring Petclinic
+Our issue tracker is available here: https://github.com/SpringSource/spring-REMOVED/issues
+
 ## Working with Petclinic in Eclipse/STS
 
 ### prerequisites
