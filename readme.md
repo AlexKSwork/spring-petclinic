@@ -1,8 +1,5 @@
 # Spring PetClinic Sample Application
 
-## What does it look like?
-spring-REMOVED has been deployed here on cloudfoundry: http://spring-REMOVED.cloudfoundry.com/
-
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-REMOVED-sample-application">See the presentation here</a>
 
