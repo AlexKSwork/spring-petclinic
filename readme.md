@@ -1,6 +1,6 @@
 # Spring PetClinic Sample Application
 
--## What does it look like?
+## What does it look like?
 -spring-REMOVED has been deployed here on cloudfoundry: http://goREMOVED.cfapps.io/
 
 
