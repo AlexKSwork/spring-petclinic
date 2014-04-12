@@ -1,7 +1,7 @@
 # Spring PetClinic Sample Application
 
 ## What does it look like?
--spring-REMOVED has been deployed here on cloudfoundry: http://goREMOVED.cfapps.io/
+-spring-REMOVED has been deployed here on cloudfoundry: http://demo-spring-REMOVED.cfapps.io/
 
 
 ## Understanding the Spring Petclinic application with a few diagrams
