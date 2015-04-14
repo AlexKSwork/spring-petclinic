@@ -19,7 +19,7 @@ import org.springframework.samples.REMOVED.model.Pet;
 
 /**
  * Subclass of Pet that carries temporary id properties which are only relevant for a JDBC implementation of the
- * ClinicService.
+ * PetRepository.
  *
  * @author Juergen Hoeller
  */
