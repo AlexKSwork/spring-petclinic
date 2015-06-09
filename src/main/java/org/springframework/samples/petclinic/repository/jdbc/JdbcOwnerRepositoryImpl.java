@@ -36,7 +36,6 @@ import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.OwnerRepository;
 import org.springframework.samples.REMOVED.repository.VisitRepository;
-import org.springframework.samples.REMOVED.util.EntityUtils;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -52,8 +51,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class JdbcOwnerRepositoryImpl implements OwnerRepository {
 
-    private VisitRepository visitRepository;
-
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     private SimpleJdbcInsert insertOwner;
@@ -68,7 +65,6 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
 
         this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 
-        this.visitRepository = visitRepository;
     }
 
 
