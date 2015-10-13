@@ -35,6 +35,7 @@ import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.model.Visit;
 import org.springframework.samples.REMOVED.repository.OwnerRepository;
+import org.springframework.samples.REMOVED.util.EntityUtils;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -114,7 +115,9 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
                 params,
                 new JdbcPetVisitExtractor()
         );
+        Collection<PetType> petTypes = getPetTypes();
         for (JdbcPet pet : pets) {
+            pet.setType(EntityUtils.getById(petTypes, PetType.class, pet.getTypeId()));
             owner.addPet(pet);
         }
     }
