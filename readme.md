@@ -15,6 +15,19 @@ You can then access REMOVED here: http://localhost:9966/REMOVED/
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/spring-projects/spring-REMOVED/issues
 
+
+## Database configuration
+
+In its default configuration, Petclinic uses an in-memory database (HSQLDB) which
+gets populated at startup with data. A similar setup is provided for MySql in case a persistent database configuration is needed.
+Note that whenever the database type is changed, the data-access.properties file needs to be updated and the mysql-connector-java artifact from the pom.xml needs to be uncommented.
+
+You may start a MySql database with docker:
+
+```
+docker run -e MYSQL_ROOT_PASSWORD=REMOVED -e MYSQL_DATABASE=REMOVED -p 3306:3306 mysql:5.7.8
+```
+
 ## Working with Petclinic in Eclipse/STS
 
 ### prerequisites
