@@ -7,7 +7,7 @@
 ## Running REMOVED locally
 ```
 	git clone https://github.com/spring-projects/spring-REMOVED.git
-	mvn tomcat7:run
+	mvnw tomcat7:run
 ```
 
 You can then access REMOVED here: http://localhost:9966/REMOVED/
