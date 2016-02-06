@@ -1,5 +1,4 @@
-# Spring PetClinic Sample Application
-
+# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-REMOVED.png?branch=master)](https://travis-ci.org/spring-projects/spring-REMOVED/)
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-REMOVED-sample-application">See the presentation here</a>
