@@ -9,7 +9,7 @@
 <jsp:include page="fragments/htmlHeader.jsp"/>
 
 <body>
-<<REMOVED:bodyHeader menuName="error"/>
+<REMOVED:bodyHeader menuName="error"/>
 <div class="container">
 
     <spring:url value="/resources/images/pets.png" var="petsImage"/>
