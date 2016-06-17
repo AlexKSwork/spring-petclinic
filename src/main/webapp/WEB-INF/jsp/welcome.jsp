@@ -8,7 +8,7 @@
 
 <html lang="en">
 
-<jsp:include page="fragments/htmlHeader.jsp"/>
+<REMOVED:htmlHeader/>
 
 <body>
 <REMOVED:bodyHeader menuName="home"/>
@@ -26,7 +26,7 @@
         <REMOVED:pivotal/>
     </div>
 </div>
-<jsp:include page="fragments/footer.jsp"/>
+<REMOVED:footer/>
 </body>
 
 </html>

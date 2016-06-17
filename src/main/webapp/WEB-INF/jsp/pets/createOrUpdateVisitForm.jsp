@@ -11,7 +11,7 @@
 
 <html lang="en">
 
-<jsp:include page="../fragments/htmlHeader.jsp"/>
+<REMOVED:htmlHeader />
 
 <body>
 
@@ -72,7 +72,7 @@
         <REMOVED:pivotal/>
     </div>
 </div>
-<jsp:include page="../fragments/footer.jsp"/>
+<REMOVED:footer />
 <script>
     $(function () {
         $("#date").datepicker({dateFormat: 'yy/mm/dd'});

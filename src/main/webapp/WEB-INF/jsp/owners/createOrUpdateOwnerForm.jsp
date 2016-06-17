@@ -11,7 +11,7 @@
 
 <html lang="en">
 
-<jsp:include page="../fragments/htmlHeader.jsp"/>
+<REMOVED:htmlHeader />
 
 <body>
 <REMOVED:bodyHeader menuName="owners"/>
@@ -44,7 +44,7 @@
         <REMOVED:pivotal/>
     </div>
 </div>
-<jsp:include page="../fragments/footer.jsp"/>
+<REMOVED:footer />
 </body>
 
 </html>

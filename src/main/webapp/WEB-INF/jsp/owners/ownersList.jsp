@@ -10,7 +10,7 @@
 
 <html lang="en">
 
-<jsp:include page="../fragments/htmlHeader.jsp"/>
+<REMOVED:htmlHeader />
 
 <body>
 <REMOVED:bodyHeader menuName="owners"/>
@@ -44,7 +44,7 @@
     </div>
 </div>
 
-<jsp:include page="../fragments/footer.jsp"/>
+<REMOVED:footer />
 </body>
 
 </html>

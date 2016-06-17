@@ -6,7 +6,7 @@
 <%@ taglib prefix="REMOVED" tagdir="/WEB-INF/tags" %>
 
 <html lang="en">
-<jsp:include page="fragments/htmlHeader.jsp"/>
+<REMOVED:htmlHeader />
 
 <body>
 <REMOVED:bodyHeader menuName="error"/>
@@ -28,7 +28,7 @@
         <REMOVED:pivotal/>
     </div>
 </div>
-<jsp:include page="fragments/footer.jsp"/>
+<REMOVED:footer/>
 </body>
 
 </html>

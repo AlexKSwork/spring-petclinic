@@ -18,6 +18,7 @@ package org.springframework.samples.REMOVED.repository;
 import java.util.List;
 
 import org.springframework.dao.DataAccessException;
+import org.springframework.data.repository.Repository;
 import org.springframework.samples.REMOVED.model.BaseEntity;
 import org.springframework.samples.REMOVED.model.Visit;
 
@@ -30,7 +31,7 @@ import org.springframework.samples.REMOVED.model.Visit;
  * @author Sam Brannen
  * @author Michael Isvy
  */
-public interface VisitRepository {
+public interface VisitRepository extends Repository<Visit, Integer> {
 
     /**
      * Save a <code>Visit</code> to the data store, either inserting or updating it.

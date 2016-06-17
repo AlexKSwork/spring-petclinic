@@ -24,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import org.springframework.samples.REMOVED.model.PetType;
 import org.springframework.samples.REMOVED.service.ClinicService;
+import org.springframework.stereotype.Component;
 
 /**
  * Instructs Spring MVC on how to parse and print elements of type 'PetType'. Starting from Spring 3.0, Formatters have
@@ -37,6 +38,7 @@ import org.springframework.samples.REMOVED.service.ClinicService;
  * @author Juergen Hoeller
  * @author Michael Isvy
  */
+@Component
 public class PetTypeFormatter implements Formatter<PetType> {
 
     private final ClinicService clinicService;
