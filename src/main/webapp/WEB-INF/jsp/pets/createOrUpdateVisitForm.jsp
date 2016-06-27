@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<%@ page session="false" %>
+<%@ page session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -9,15 +7,15 @@
 <%@ taglib prefix="REMOVED" tagdir="/WEB-INF/tags" %>
 
 
-<html lang="en">
-
-<REMOVED:htmlHeader />
-
-<body>
-
-<REMOVED:bodyHeader menuName="owners"/>
-<div class="container-fluid">
-    <div class="container xd-container">
+<REMOVED:layout pageName="owners">
+    <jsp:attribute name="customScript">
+        <script>
+            $(function () {
+                $("#date").datepicker({dateFormat: 'yy/mm/dd'});
+            });
+        </script>
+    </jsp:attribute>
+    <jsp:body>
         <h2><c:if test="${visit['new']}">New </c:if>Visit</h2>
 
         <b>Pet</b>
@@ -68,16 +66,6 @@
                 </c:if>
             </c:forEach>
         </table>
+    </jsp:body>
 
-        <REMOVED:pivotal/>
-    </div>
-</div>
-<REMOVED:footer />
-<script>
-    $(function () {
-        $("#date").datepicker({dateFormat: 'yy/mm/dd'});
-    });
-</script>
-</body>
-
-</html>
+</REMOVED:layout>
