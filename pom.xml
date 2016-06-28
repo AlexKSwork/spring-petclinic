@@ -11,7 +11,7 @@
         <version>1.3.5.RELEASE</version>
     </parent>
     <name>REMOVED</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <properties>
 
