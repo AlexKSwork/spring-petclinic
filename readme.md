@@ -7,6 +7,7 @@
 ```
 	git clone https://github.com/spring-projects/spring-REMOVED.git
 	cd spring-REMOVED
+	git checkout springboot
 	./mvnw spring-boot:run
 ```
 
