@@ -17,10 +17,8 @@ package org.springframework.samples.REMOVED.repository;
 
 import java.util.List;
 
-import org.springframework.dao.DataAccessException;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
-import org.springframework.samples.REMOVED.model.BaseEntity;
 import org.springframework.samples.REMOVED.model.Pet;
 import org.springframework.samples.REMOVED.model.PetType;
 
@@ -47,7 +45,7 @@ public interface PetRepository extends Repository<Pet, Integer> {
      * @param id the id to search for
      * @return the {@link Pet} if found
      */
-    Pet findById(int id);
+    Pet findById(Integer id);
 
     /**
      * Save a {@link Pet} to the data store, either inserting or updating it.
