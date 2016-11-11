@@ -54,8 +54,8 @@ File -> Import -> Maven -> Existing Maven project
 
 ## Looking for something in particular?
 
-|Spring Boot Configuration ||
-|--------------------------|-|
+|Spring Boot Configuration | Class or Java property files  |
+|--------------------------|---|
 |The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
 |Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources) |
 |Caching | EhCache [CacheConfig](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/config/CacheConfig.java) |
