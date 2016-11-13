@@ -72,6 +72,7 @@ Otherwise the GitHub [spring-REMOVED](https://github.com/spring-REMOVED) is host
 | [legacy](https://github.com/spring-projects/spring-REMOVED/tree/legacy) | Spring Framework, JSP pages, 3 persistences layer: JDBC, JPA and Spring Data JPA |
 | [javaconfig](https://github.com/spring-projects/spring-REMOVED/tree/javaconfig) | Same framewoks as the [legacy](https://github.com/spring-projects/spring-REMOVED/tree/legacy) branch but with Java Configuration instead of XML |
 | [spring-REMOVED-angular1](https://github.com/spring-REMOVED/spring-REMOVED-angular1) | AngularJS 1, Spring Boot and Spring Data JPA |
+| [spring-REMOVED-microservices](https://github.com/spring-REMOVED/spring-REMOVED-microservices) | Distributed version of Spring Petclinic built with Spring Cloud |
 
 
 ## Interaction with other open source projects
