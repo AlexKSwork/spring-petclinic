@@ -65,14 +65,15 @@ File -> Import -> Maven -> Existing Maven project
 ## Interesting Spring Petclinic branches and forks
 
 The Spring Petclinic master branch is based on Spring Boot and Thymeleaf. But other branches may interest you. 
-Otherwise the GitHub [spring-REMOVED](https://github.com/spring-REMOVED) is hosting Spring Petclinic forks.
+Otherwise the GitHub [spring-REMOVED](https://github.com/spring-REMOVED) project is hosting Spring Petclinic forks.
 
 | Branch or fork | Main technologies |
-|------|-------|
-| [legacy](https://github.com/spring-projects/spring-REMOVED/tree/legacy) | Spring Framework, JSP pages, 3 persistences layer: JDBC, JPA and Spring Data JPA |
-| [javaconfig](https://github.com/spring-projects/spring-REMOVED/tree/javaconfig) | Same framewoks as the [legacy](https://github.com/spring-projects/spring-REMOVED/tree/legacy) branch but with Java Configuration instead of XML |
-| [spring-REMOVED-angular1](https://github.com/spring-REMOVED/spring-REMOVED-angular1) | AngularJS 1, Spring Boot and Spring Data JPA |
+|----------------|-------------------|
+| [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) | Spring Framework XML configuration, JSP pages, 3 persistence layers: JDBC, JPA and Spring Data JPA |
+| [javaconfig branch](https://github.com/spring-REMOVED/spring-framework-REMOVED/tree/javaconfig) | Same frameworks as the [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) but with Java Configuration instead of XML |
+| [spring-REMOVED-angular1](https://github.com/spring-REMOVED/spring-REMOVED-angular1) | AngularJS 1.x, Spring Boot and Spring Data JPA |
 | [spring-REMOVED-microservices](https://github.com/spring-REMOVED/spring-REMOVED-microservices) | Distributed version of Spring Petclinic built with Spring Cloud |
+| [spring-REMOVED-reactjs](https://github.com/spring-REMOVED/spring-REMOVED-reactjs) | ReactJS (with TypeScript) and Spring Boot |
 
 
 ## Interaction with other open source projects
@@ -91,7 +92,7 @@ Here is a list of them:
 
 The [issue tracker](https://github.com/spring-projects/spring-REMOVED/issues) is the preferred channel for bug reports, features requests and submitting pull requests.
 
-For pull requests, editor preferences are available in the [editor config](https://github.com/spring-projects/spring-REMOVED/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+For pull requests, editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 
 
