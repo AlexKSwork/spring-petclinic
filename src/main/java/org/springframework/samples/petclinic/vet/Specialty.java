@@ -15,6 +15,8 @@
  */
 package org.springframework.samples.REMOVED.vet;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -27,6 +29,6 @@ import org.springframework.samples.REMOVED.model.NamedEntity;
  */
 @Entity
 @Table(name = "specialties")
-public class Specialty extends NamedEntity {
+public class Specialty extends NamedEntity implements Serializable {
 
 }
