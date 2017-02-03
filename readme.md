@@ -60,7 +60,7 @@ File -> Import -> Maven -> Existing Maven project
 |--------------------------|---|
 |The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
 |Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources) |
-|Caching | EhCache [CacheConfig](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/system/CacheConfig.java) |
+|Caching | [CacheConfig](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/system/CacheConfig.java) |
 
 ## Interesting Spring Petclinic branches and forks
 
