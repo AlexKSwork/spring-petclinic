@@ -77,7 +77,7 @@ there.
 |----------------|-------------------|
 | [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) | Spring Framework XML configuration, JSP pages, 3 persistence layers: JDBC, JPA and Spring Data JPA |
 | [javaconfig branch](https://github.com/spring-REMOVED/spring-framework-REMOVED/tree/javaconfig) | Same frameworks as the [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) but with Java Configuration instead of XML |
-| [spring-REMOVED-angular1](https://github.com/spring-REMOVED/spring-REMOVED-angular1) | AngularJS 1.x, Spring Boot and Spring Data JPA |
+| [spring-REMOVED-angular](https://github.com/spring-REMOVED/spring-REMOVED-angularjs) | AngularJS 1.x, Spring Boot and Spring Data JPA |
 | [spring-REMOVED-microservices](https://github.com/spring-REMOVED/spring-REMOVED-microservices) | Distributed version of Spring Petclinic built with Spring Cloud |
 | [spring-REMOVED-reactjs](https://github.com/spring-REMOVED/spring-REMOVED-reactjs) | ReactJS (with TypeScript) and Spring Boot |
 
