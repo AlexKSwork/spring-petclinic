@@ -73,13 +73,17 @@ you have a special interest in a different technology stack that could
 be used to implement the Pet Clinic then please join the community
 there.
 
-| Link | Main technologies |
-|----------------|-------------------|
-| [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) | Spring Framework XML configuration, JSP pages, 3 persistence layers: JDBC, JPA and Spring Data JPA |
-| [javaconfig branch](https://github.com/spring-REMOVED/spring-framework-REMOVED/tree/javaconfig) | Same frameworks as the [spring-framework-REMOVED](https://github.com/spring-REMOVED/spring-framework-REMOVED) but with Java Configuration instead of XML |
-| [spring-REMOVED-angular](https://github.com/spring-REMOVED/spring-REMOVED-angularjs) | AngularJS 1.x, Spring Boot and Spring Data JPA |
-| [spring-REMOVED-microservices](https://github.com/spring-REMOVED/spring-REMOVED-microservices) | Distributed version of Spring Petclinic built with Spring Cloud |
-| [spring-REMOVED-reactjs](https://github.com/spring-REMOVED/spring-REMOVED-reactjs) | ReactJS (with TypeScript) and Spring Boot |
+| Link                               | Main technologies |
+|------------------------------------|-------------------|
+| [spring-framework-REMOVED][]     | Spring Framework XML configuration, JSP pages, 3 persistence layers: JDBC, JPA and Spring Data JPA |
+| [javaconfig branch][]              | Same frameworks as the [spring-framework-REMOVED][] but with Java Configuration instead of XML |
+| [spring-REMOVED-angularjs][]     | AngularJS 1.x, Spring Boot and Spring Data JPA |
+| [spring-REMOVED-angular][]       | Angular 4 front-end of the Petclinic REST API [spring-REMOVED-rest][] |
+| [spring-REMOVED-microservices][] | Distributed version of Spring Petclinic built with Spring Cloud |
+| [spring-REMOVED-reactjs][]       | ReactJS (with TypeScript) and Spring Boot |
+| [spring-REMOVED-graphql][]       | GraphQL version based on React Appolo, TypeScript and GraphQL Spring boot starter |
+| [spring-REMOVED-kotlin][]        | Kotlin version of [spring-REMOVED][] |
+| [spring-REMOVED-rest][]          | Backend REST API |
 
 
 ## Interaction with other open source projects
@@ -103,3 +107,13 @@ For pull requests, editor preferences are available in the [editor config](.edit
 # License
 
 The Spring PetClinic sample application is released under version 2.0 of the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
+
+[spring-REMOVED]: https://github.com/spring-projects/spring-REMOVED
+[spring-framework-REMOVED]: https://github.com/spring-REMOVED/spring-framework-REMOVED
+[spring-REMOVED-angularjs]: https://github.com/spring-REMOVED/spring-REMOVED-angularjs 
+[javaconfig branch]: https://github.com/spring-REMOVED/spring-framework-REMOVED/tree/javaconfig
+[spring-REMOVED-angular]: https://github.com/spring-REMOVED/spring-REMOVED-angular
+[spring-REMOVED-microservices]: https://github.com/spring-REMOVED/spring-REMOVED-microservices
+[spring-REMOVED-reactjs]: https://github.com/spring-REMOVED/spring-REMOVED-reactjs
+[spring-REMOVED-graphql]: https://github.com/spring-REMOVED/spring-REMOVED-graphql
+[spring-REMOVED-kotlin]: https://github.com/spring-REMOVED/spring-REMOVED-kotlin
