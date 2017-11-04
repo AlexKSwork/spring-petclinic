@@ -117,3 +117,4 @@ The Spring PetClinic sample application is released under version 2.0 of the [Ap
 [spring-REMOVED-reactjs]: https://github.com/spring-REMOVED/spring-REMOVED-reactjs
 [spring-REMOVED-graphql]: https://github.com/spring-REMOVED/spring-REMOVED-graphql
 [spring-REMOVED-kotlin]: https://github.com/spring-REMOVED/spring-REMOVED-kotlin
+[spring-REMOVED-rest]: https://github.com/spring-REMOVED/spring-REMOVED-rest
