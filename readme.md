@@ -4,15 +4,25 @@
 <a href="https://speakerdeck.com/michaelisvy/spring-REMOVED-sample-application">See the presentation here</a>
 
 ## Running REMOVED locally
+Petclinic is a https://spring.io/guides/gs/spring-boot[Spring Boot] application built using https://spring.io/guides/gs/maven/[Maven]. You can build a jar file and run it from the command line:
+
+
 ```
 	git clone https://github.com/spring-projects/spring-REMOVED.git
 	cd spring-REMOVED
-	./mvnw spring-boot:run
+    ./mvnw package
+    java -jar target/*.jar
 ```
 
 You can then access REMOVED here: http://localhost:8080/
 
 <img width="1042" alt="REMOVED-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
+
+Or you can run it from Maven directly using the Spring Boot Maven plugin. If you do this it will pick up changes that you make in the project immediately (changes to Java source files require a compile as well - most people use an IDE for this):
+
+```
+	./mvnw spring-boot:run
+```
 
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/spring-projects/spring-REMOVED/issues
