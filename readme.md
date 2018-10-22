@@ -90,26 +90,11 @@ Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## Interesting Spring Petclinic branches and forks
 
-The Spring Petclinic master branch in the main
-[spring-projects](https://github.com/spring-projects/spring-REMOVED)
-GitHub org is the "canonical" implementation, currently based on
-Spring Boot and Thymeleaf. There are quite a few forks in a special
-GitHub org [spring-REMOVED](https://github.com/spring-REMOVED). If
-you have a special interest in a different technology stack that could
-be used to implement the Pet Clinic then please join the community
-there.
-
-| Link                               | Main technologies |
-|------------------------------------|-------------------|
-| [spring-framework-REMOVED][]     | Spring Framework XML configuration, JSP pages, 3 persistence layers: JDBC, JPA and Spring Data JPA |
-| [javaconfig branch][]              | Same frameworks as the [spring-framework-REMOVED][] but with Java Configuration instead of XML |
-| [spring-REMOVED-angularjs][]     | AngularJS 1.x, Spring Boot and Spring Data JPA |
-| [spring-REMOVED-angular][]       | Angular 4 front-end of the Petclinic REST API [spring-REMOVED-rest][] |
-| [spring-REMOVED-microservices][] | Distributed version of Spring Petclinic built with Spring Cloud |
-| [spring-REMOVED-reactjs][]       | ReactJS (with TypeScript) and Spring Boot |
-| [spring-REMOVED-graphql][]       | GraphQL version based on React Appolo, TypeScript and GraphQL Spring boot starter |
-| [spring-REMOVED-kotlin][]        | Kotlin version of [spring-REMOVED][] |
-| [spring-REMOVED-rest][]          | Backend REST API |
+The Spring Petclinic master branch in the main [spring-projects](https://github.com/spring-projects/spring-REMOVED)
+GitHub org is the "canonical" implementation, currently based on Spring Boot and Thymeleaf. There are
+[quite a few forks](https://spring-REMOVED.github.io/docs/forks.html) in a special GitHub org
+[spring-REMOVED](https://github.com/spring-REMOVED). If you have a special interest in a different technology stack
+that could be used to implement the Pet Clinic then please join the community there.
 
 
 ## Interaction with other open source projects
