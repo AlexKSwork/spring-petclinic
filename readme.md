@@ -44,6 +44,8 @@ You could start MySql locally with whatever installer works for your OS, or with
 docker run -e MYSQL_ROOT_PASSWORD=REMOVED -e MYSQL_DATABASE=REMOVED -p 3306:3306 mysql:5.7.8
 ```
 
+Further documentation is provided [here](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt).
+
 ## Working with Petclinic in your IDE
 
 ### Prerequisites
