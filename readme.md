@@ -1,4 +1,4 @@
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-REMOVED.png?branch=master)](https://travis-ci.org/spring-projects/spring-REMOVED/)
+# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-REMOVED.png?branch=main)](https://travis-ci.org/spring-projects/spring-REMOVED/)
 Deploy this sample application to Pivotal Web Services:
 
 <a href="https://push-to.cfapps.io?repo=https%3A%2F%2Fgithub.com%2Fspring-projects%2Fspring-REMOVED.git">
@@ -48,7 +48,7 @@ You could start MySql locally with whatever installer works for your OS, or with
 docker run -e MYSQL_USER=REMOVED -e MYSQL_PASSWORD=REMOVED -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=REMOVED -p 3306:3306 mysql:5.7.8
 ```
 
-Further documentation is provided [here](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt).
+Further documentation is provided [here](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt).
 
 ## Working with Petclinic in your IDE
 
@@ -96,13 +96,13 @@ Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources) |
-|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/system/CacheConfiguration.java) |
+|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources) |
+|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/java/org/springframework/samples/REMOVED/system/CacheConfiguration.java) |
 
 ## Interesting Spring Petclinic branches and forks
 
-The Spring Petclinic master branch in the main [spring-projects](https://github.com/spring-projects/spring-REMOVED)
+The Spring Petclinic "main" branch in the [spring-projects](https://github.com/spring-projects/spring-REMOVED)
 GitHub org is the "canonical" implementation, currently based on Spring Boot and Thymeleaf. There are
 [quite a few forks](https://spring-REMOVED.github.io/docs/forks.html) in a special GitHub org
 [spring-REMOVED](https://github.com/spring-REMOVED). If you have a special interest in a different technology stack
