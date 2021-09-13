@@ -15,10 +15,10 @@
  */
 package org.springframework.samples.REMOVED.owner;
 
+import org.springframework.samples.REMOVED.model.NamedEntity;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-import org.springframework.samples.REMOVED.model.NamedEntity;
 
 /**
  * @author Juergen Hoeller Can be Cat, Dog, Hamster...

@@ -15,12 +15,11 @@
  */
 package org.springframework.samples.REMOVED.vet;
 
-import java.io.Serializable;
+import org.springframework.samples.REMOVED.model.NamedEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-import org.springframework.samples.REMOVED.model.NamedEntity;
+import java.io.Serializable;
 
 /**
  * Models a {@link Vet Vet's} specialty (for example, dentistry).

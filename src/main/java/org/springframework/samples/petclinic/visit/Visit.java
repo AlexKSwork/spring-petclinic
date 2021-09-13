@@ -15,15 +15,14 @@
  */
 package org.springframework.samples.REMOVED.visit;
 
-import java.time.LocalDate;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.samples.REMOVED.model.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
-
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.samples.REMOVED.model.BaseEntity;
+import java.time.LocalDate;
 
 /**
  * Simple JavaBean domain object representing a visit.
