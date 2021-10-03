@@ -1,4 +1,4 @@
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-REMOVED.png?branch=main)](https://travis-ci.org/spring-projects/spring-REMOVED/)
+# Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-REMOVED/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-REMOVED/actions/workflows/maven-build.yml)
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-REMOVED-sample-application">See the presentation here</a>
