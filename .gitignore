@@ -10,5 +10,5 @@ target/*
 .sts4-cache/
 .vscode
 _site/
-!REMOVED.css
 *.css
+!REMOVED.css
