@@ -46,6 +46,10 @@ docker run -e MYSQL_USER=REMOVED -e MYSQL_PASSWORD=REMOVED -e MYSQL_ROOT_PASSWOR
 
 Further documentation is provided [here](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt).
 
+## Compiling the CSS
+
+There is a `REMOVED.css` in `src/main/resources/static/resources/css`. It was generated from the `REMOVED.scss` source, combined with the [Bootstrap](https://getbootstrap.com/) library. If you make changes to the `scss`, or upgrade Bootstrap, you will need to re-compile the CSS resources using the Maven profile "css", i.e. `./mvnw package -P css`.
+
 ## Working with Petclinic in your IDE
 
 ### Prerequisites
