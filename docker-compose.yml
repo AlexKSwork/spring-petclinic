@@ -13,3 +13,11 @@ services:
       - MYSQL_DATABASE=REMOVED
     volumes:
       - "./conf.d:/etc/mysql/conf.d:ro"
+  postgres:
+    image: postgres:14.1
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=REMOVED
+      - POSTGRES_USER=REMOVED
+      - POSTGRES_DB=REMOVED
