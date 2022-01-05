@@ -32,7 +32,6 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.samples.REMOVED.model.NamedEntity;
-import org.springframework.samples.REMOVED.visit.Visit;
 
 /**
  * Simple business object representing a pet.

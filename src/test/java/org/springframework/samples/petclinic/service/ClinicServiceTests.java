@@ -33,9 +33,9 @@ import org.springframework.samples.REMOVED.owner.Owner;
 import org.springframework.samples.REMOVED.owner.OwnerRepository;
 import org.springframework.samples.REMOVED.owner.Pet;
 import org.springframework.samples.REMOVED.owner.PetType;
+import org.springframework.samples.REMOVED.owner.Visit;
 import org.springframework.samples.REMOVED.vet.Vet;
 import org.springframework.samples.REMOVED.vet.VetRepository;
-import org.springframework.samples.REMOVED.visit.Visit;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
