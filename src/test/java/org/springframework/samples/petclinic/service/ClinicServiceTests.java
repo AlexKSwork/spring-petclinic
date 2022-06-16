@@ -37,7 +37,6 @@ import org.springframework.samples.REMOVED.owner.Visit;
 import org.springframework.samples.REMOVED.vet.Vet;
 import org.springframework.samples.REMOVED.vet.VetRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
