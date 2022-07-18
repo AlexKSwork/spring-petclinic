@@ -1,15 +1,12 @@
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-REMOVED.png?branch=master)](https://travis-ci.org/spring-projects/spring-REMOVED/)
-Deploy this sample application to Pivotal Web Services:
+# Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-REMOVED/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-REMOVED/actions/workflows/maven-build.yml)
 
-<a href="https://push-to.cfapps.io?repo=https%3A%2F%2Fgithub.com%2Fspring-projects%2Fspring-REMOVED.git">
-    <img src="https://push-to.cfapps.io/ui/assets/images/Push-to-Pivotal-Light-with-Shadow.svg" width="180" alt="Push" align="center">
-</a>
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/spring-projects/spring-REMOVED)
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-REMOVED-sample-application">See the presentation here</a>
 
 ## Running REMOVED locally
-Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line:
+Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line (it should work just as well with Java 11 or newer):
 
 
 ```
@@ -29,6 +26,18 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin. If you
 ./mvnw spring-boot:run
 ```
 
+> NOTE: Windows users should set `git config core.autocrlf true` to avoid format assertions failing the build (use `--global` to set that flag globally).
+
+> NOTE: If you prefer to use Gradle, you can build the app using `./gradlew build` and look for the jar file in `build/libs`.
+
+## Building a Container
+
+There is no `Dockerfile` in this project. You can build a container image (if you have a docker daemon) using the Spring Boot build plugin:
+
+```
+./mvnw spring-boot:build-image
+```
+
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/spring-projects/spring-REMOVED/issues
 
@@ -37,24 +46,34 @@ Our issue tracker is available here: https://github.com/spring-projects/spring-R
 
 In its default configuration, Petclinic uses an in-memory database (H2) which
 gets populated at startup with data. The h2 console is automatically exposed at `http://localhost:8080/h2-console`
-and it is possibl to inspect the content of the database using the `jdbc:h2:mem:testdb` url.
+and it is possible to inspect the content of the database using the `jdbc:h2:mem:testdb` url.
  
-A similar setup is provided for MySql in case a persistent database configuration is needed.
-Note that whenever the database type is changed, the app needs to be run with a different profile: `spring.profiles.active=mysql` for MySql.
+A similar setup is provided for MySQL and PostgreSQL in case a persistent database configuration is needed. Note that whenever the database type is changed, the app needs to be run with a different profile: `spring.profiles.active=mysql` for MySQL or `spring.profiles.active=postgres` for PostgreSQL.
 
-You could start MySql locally with whatever installer works for your OS, or with docker:
+You could start MySQL or PostgreSQL locally with whatever installer works for your OS, or with docker:
 
 ```
 docker run -e MYSQL_USER=REMOVED -e MYSQL_PASSWORD=REMOVED -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=REMOVED -p 3306:3306 mysql:5.7.8
 ```
 
-Further documentation is provided [here](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt).
+or
+
+```
+docker run -e POSTGRES_USER=REMOVED -e POSTGRES_PASSWORD=REMOVED -e POSTGRES_DB=REMOVED -p 5432:5432 postgres:14.1
+```
+
+Further documentation is provided for [MySQL](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources/db/mysql/REMOVED_db_setup_mysql.txt)
+and for [PostgreSQL](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources/db/postgres/REMOVED_db_setup_postgres.txt).
+
+## Compiling the CSS
+
+There is a `REMOVED.css` in `src/main/resources/static/resources/css`. It was generated from the `REMOVED.scss` source, combined with the [Bootstrap](https://getbootstrap.com/) library. If you make changes to the `scss`, or upgrade Bootstrap, you will need to re-compile the CSS resources using the Maven profile "css", i.e. `./mvnw package -P css`. There is no build profile for Gradle to compile the CSS.
 
 ## Working with Petclinic in your IDE
 
 ### Prerequisites
 The following items should be installed in your system:
-* Java 8 or newer.
+* Java 11 or newer (full JDK not a JRE).
 * git command line tool (https://help.github.com/articles/set-up-git)
 * Your preferred IDE 
   * Eclipse with the m2e plugin. Note: when m2e is available, there is an m2 icon in `Help -> About` dialog. If m2e is
@@ -66,43 +85,39 @@ The following items should be installed in your system:
 ### Steps:
 
 1) On the command line
-```
-git clone https://github.com/spring-projects/spring-REMOVED.git
-```
+    ```
+    git clone https://github.com/spring-projects/spring-REMOVED.git
+    ```
 2) Inside Eclipse or STS
-```
-File -> Import -> Maven -> Existing Maven project
-```
+    ```
+    File -> Import -> Maven -> Existing Maven project
+    ```
 
-Then either build on the command line `./mvnw generate-resources` or using the Eclipse launcher (right click on project and `Run As -> Maven install`) to generate the css. Run the application main method by right clicking on it and choosing `Run As -> Java Application`.
+    Then either build on the command line `./mvnw generate-resources` or using the Eclipse launcher (right click on project and `Run As -> Maven install`) to generate the css. Run the application main method by right clicking on it and choosing `Run As -> Java Application`.
 
 3) Inside IntelliJ IDEA
+    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
-In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
+    CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources` or right click on the `spring-REMOVED` project then `Maven -> Generates sources and Update Folders`.
 
-CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources`
-or right click on the `spring-REMOVED` project then `Maven -> Generates sources and Update Folders`.
-
-A run configuration named `PetClinicApplication` should have been created for you if you're using a recent Ultimate
-version. Otherwise, run the application by right clicking on the `PetClinicApplication` main class and choosing
-`Run 'PetClinicApplication'`.
+    A run configuration named `PetClinicApplication` should have been created for you if you're using a recent Ultimate version. Otherwise, run the application by right clicking on the `PetClinicApplication` main class and choosing `Run 'PetClinicApplication'`.
 
 4) Navigate to Petclinic
 
-Visit [http://localhost:8080](http://localhost:8080) in your browser.
+    Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 
 ## Looking for something in particular?
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/resources) |
-|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-REMOVED/blob/master/src/main/java/org/springframework/samples/REMOVED/system/CacheConfiguration.java) |
+|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/java/org/springframework/samples/REMOVED/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/resources) |
+|Caching | [CacheConfiguration](https://github.com/spring-projects/spring-REMOVED/blob/main/src/main/java/org/springframework/samples/REMOVED/system/CacheConfiguration.java) |
 
 ## Interesting Spring Petclinic branches and forks
 
-The Spring Petclinic master branch in the main [spring-projects](https://github.com/spring-projects/spring-REMOVED)
+The Spring Petclinic "main" branch in the [spring-projects](https://github.com/spring-projects/spring-REMOVED)
 GitHub org is the "canonical" implementation, currently based on Spring Boot and Thymeleaf. There are
 [quite a few forks](https://spring-REMOVED.github.io/docs/forks.html) in a special GitHub org
 [spring-REMOVED](https://github.com/spring-REMOVED). If you have a special interest in a different technology stack
